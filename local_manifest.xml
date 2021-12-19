@@ -9,7 +9,7 @@
 
   <!-- Trees -->
   <project path="device/xiaomi/vince" name="device_xiaomi_vince" remote="sm" revision="arrow-11.0" />
-  <project path="vendor/xiaomi/vince" name="vendor/xiaomi/vince" remote="sm" revision="arrow-11.0" />
+  <project path="vendor_xiaomi_vince" name="vendor/xiaomi/vince" remote="sm" revision="arrow-11.0" />
   <project path="kernel/xiaomi/vince" name="android_kernel_xiaomi_vince" remote="Uni" revision="stable" />
 
 </manifest>
