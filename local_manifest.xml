@@ -10,10 +10,21 @@
   <remote  name="clang"
           fetch="https://github.com/kdrag0n" />
 
+  <remote  name="pe"
+          fetch="https://github.com/PixelExperience" />
+
   <!-- Trees -->
   <project path="device/xiaomi/vince" name="device_xiaomi_vince" remote="sm" revision="arrow-11.0" />
   <project path="vendor/xiaomi/vince" name="vendor_xiaomi_vince" remote="sm" revision="arrow-11.0" />
   <project path="kernel/xiaomi/vince" name="android_kernel_xiaomi_vince" remote="Uni" revision="stable" />
   <project path="prebuilts/clang/host/linux-x86/clang-proton" name="proton-clang" remote="clang" revision="master" clone-depth="1" />
+
+  <!-- Hals -->
+  <remove-project name="hardware_qcom-caf_msm8996_audio" />
+  <remove-project name="hardware_qcom-caf_msm8996_display" />
+  <remove-project name="hardware_qcom-caf_msm8996_media" />
+  <project path="hardware/qcom-caf/msm8996/audio" name="hardware_qcom-caf_msm8996-r_audio" remote="pe" revision="twelve" clone-depth="1" />
+  <project path="hardware/qcom-caf/msm8996/display" name="hardware_qcom-caf_msm8996-r_display" remote="pe" revision="twelve" clone-depth="1" />
+  <project path="hardware/qcom-caf/msm8996/media" name="/hardware_qcom-caf_msm8996-r_media" remote="pe" revision="twelve" clone-depth="1" />
 
 </manifest>
